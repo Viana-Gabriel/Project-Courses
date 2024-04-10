@@ -1,0 +1,104 @@
+@import './variaveis.css';
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+  background: linear-gradient(120deg, #8C0093, #2C2B89, #13AAB6);
+
+}
+
+.msg {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1rem;
+  display: none;
+}
+
+.msg p {
+  font-size: .9rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.774);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  width: auto;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.container_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.container_login--header {
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.container_login--header h2 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+.container_login label {
+  display: block;
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+  font-size: .9rem;
+}
+
+.container_login input {
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  outline: 0;
+  background: transparent;
+
+  margin-bottom: .8rem;
+  width: 250px;
+  height: 2rem;
+  padding: 0 .5rem;
+}
+
+#btnLogar {
+  color: white;
+  display: block;
+  margin: 10% auto;
+  border: none;
+  background: linear-gradient(60deg, var(--color-primary), var(--color-secundary));
+  padding: .6rem 3rem;
+  border-radius: 5px;
+}
+
+
+#btnLogar:hover {
+  cursor: pointer;
+  background: linear-gradient(60deg, #0052e9, #80D0C7);
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin: 5% 0;
+}
+
+.icons i {
+  font-size: 20px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: #0052e9;
+}

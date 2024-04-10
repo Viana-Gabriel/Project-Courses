@@ -1,0 +1,121 @@
+@import './variaveis.css';
+
+.banner {
+  width: 1200px;
+  height: 400px;
+  margin: 1rem auto;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.cursos {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cursos__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 2rem 0;
+  font-weight: 600;
+
+}
+
+.cursos__filter button, #btnCadastrarCurso{
+  text-decoration: none;
+  border: none;
+  padding: .6rem 2rem;
+  cursor: pointer;
+  background: #164B96;
+  color: white;
+}
+
+.cursos__filter button:hover , #btnCadastrarCurso:hover{
+  border: none;
+  padding: .6rem 2rem;
+  cursor: pointer;
+  background: #164b96c4;
+  color: white;
+}
+
+.cursos__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  overflow-y: scroll;
+  height: 420px;
+  margin: 2rem 0;
+
+}
+
+.cursos__container::-webkit-scrollbar {
+  width: 0;
+}
+
+.curso {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.curso:hover {
+  opacity: 0.8;
+
+}
+
+.curso img {
+  width: 100%;
+  height: 175px;
+}
+
+.curso__titulo {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  padding: 0.3rem .5rem;
+}
+
+.curso__duracao {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+
+@media (max-width:1200px) {
+  .banner{
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (max-width:600px) {
+
+  .cursos__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+  }
+  .cursos__filter {
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    gap:1rem;
+  }
+
+  .cursos p{
+    display: none;
+  }
+ 
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https: //fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/adiciona_cursos.css">
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <div class="logo">
+        <a href="index.html">
+          <h1>VianaCursos</h1>
+        </a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Busque pelos nossos cursos...">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <nav class="nav_bar">
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Sign up</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form>
+      <div class="container">
+        <div>
+          <h1>Cadastre novos cursos na Plataforma</h1>
+        </div>
+        <div>
+          <label for="inNome">Nome do Curso</label>
+          <input type="text" id="inNome">
+        </div>
+        <div>
+          <label for="inCategoria">Categoria do Curso</label>
+          <select id="inCategoria">
+            <option value=""></option>
+            <option value="Html">Html</option>
+            <option value="Css">Css</option>
+            <option value="JavaScript">JavaScript</option>
+          </select>
+        </div>
+        <div>
+          <label for="inDuracao">Duração Curso(h)</label>
+          <input type="number" id="inDuracao">
+        </div>
+
+        <input type="submit" value="Cadastrar novo Curso" id="btnCadastrarCurso">
+    </form>
+    </div>
+  </main>
+</body>
+<script type="module" src="./js/adicionar_cursos.js"></script>
+
+</html>

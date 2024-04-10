@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="css/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/login.css">
+
+  <link href="https: //fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <div class="logo">
+        <a href="index.html">
+          <h1>VianaCursos</h1>
+        </a>
+      </div>
+      <nav class="nav_bar">
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Sign up</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <span class="msg" id="msg"></span>
+    <div class="container">
+      <div class="container_login">
+        <div class="container_login--header">
+          <h2>Seja Bem-Vindo</h2>
+          <p>Um prazer te rever por aqui</p>
+        </div>
+        <div>
+          <label for="Email" id="labellogEmail">Email</label>
+          <input type="email" id="logEmail" required autocomplete="off">
+        </div>
+        <div>
+          <label for="Senha" id="labellogSenha">Senha</label>
+          <input type="password" id="logSenha" required autocomplete="off">
+        </div>
+        <div>
+          <button id="btnLogar">Logar</button>
+        </div>
+        <p>
+          Ainda não possui uma conta? <a href="cadastro.html">faça Sign up</a>
+        </p>
+        <div class="icons">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+<script src="./js/login.js"></script>
+
+</html>

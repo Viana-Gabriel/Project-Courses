@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https: //fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <div class="logo">
+        <a href="index.html">
+          <h1>VianaCursos</h1>
+        </a>
+      </div>
+      <div class="search">
+        <form >
+          <input type="text" placeholder="Busque pelos nossos cursos..." id="search" >
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <nav class="nav_bar">
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Sign up</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="swiper banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/banner1.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="cursos">
+      <div class="cursos__filter">
+
+        <a href="./adicionar_cursos.html" id="btnCadastrarCurso">Cadastrar novo Curso</a>
+        <p>Filtre por:</p>
+        <button id="btnTodos">Todos</button>
+        <button id="btnHtml" value="Html">Html</button>
+        <button id="btnCss" value="Css">Css</button>
+        <button id="btnJavaScript" value="JavaScript">JavaScript</button>
+      </div>
+      <div class="cursos__container"></div>
+
+    </section>
+  </main>
+  <footer>
+    <h2>
+      &copy Desenvolvido por Gabriel Viana - 2024
+    </h2>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay: 5000,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    }
+  });
+</script>
+
+<script type="module" src="./js/main.js"></script>
+
+</html>
